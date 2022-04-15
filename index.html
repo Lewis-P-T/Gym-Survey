@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+          <h1 id="title" class="text-center">Gym Survey Form</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to help us improve our gym together
+          </p>
+        </header>
+
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+
+          <div class="form-group">
+            <p>Which option best describes your current fitness level</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <!--<option disabled selected value>Very Un-fit</option>-->
+                <option value="veryUnfit">Very unfit</option>
+                <option value="SligtlyUnfit">Sligtly Unfit</option>
+                <option value="averagelyFit">Averagely fit </option>
+                <option value="aboveAverageFitness">Above average fitness</option>
+                <option value="athleteLevelFitness">Athlete level fitness</option>
+                <option value="god">God level</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Would you recommend our gym to a friend?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Yes</label>
+
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label>
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Not sure</label>
+          </div>
+      
+          
+      
+          <div class="form-group">
+            <p>
+                What equipment do you use at our gym?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="LegPressMachine"
+                type="checkbox"
+                class="input-checkbox"
+              />Leg Press Machine</label>
+
+            <label>
+              <input
+                name="prefer"
+                value="HackSquatMachine"
+                type="checkbox"
+                class="input-checkbox"
+              />Hack Squat Machine</label>
+
+            <label>
+                <input
+                name="prefer"
+                value="PecDeckMechine"
+                type="checkbox"
+                class="input-checkbox"
+              />Pec Deck Mechine</label>
+
+            <label>
+              <input
+                name="prefer"
+                value="Kettlebells"
+                type="checkbox"
+                class="input-checkbox"
+              />Kettlebells</label>
+
+            <label>
+              <input
+                name="prefer"
+                value="StairStepper"
+                type="checkbox"
+                class="input-checkbox"
+              />Stair Stepper</label>
+
+            <label>
+              <input
+                name="prefer"
+                value="StationaryBike"
+                type="checkbox"
+                class="input-checkbox"
+              />Stationary Bike</label>
+
+            <label>
+                <input
+                name="prefer"
+                value="Barbells"
+                type="checkbox"
+                class="input-checkbox"
+              />Barbells</label>
+
+            <label>
+                <input
+                name="prefer"
+                value="Dumbbells"
+                type="checkbox"
+                class="input-checkbox"
+              />Dumbbells</label>
+
+            <label>
+                <input
+                name="prefer"
+                value="LatPullDownMachine"
+                type="checkbox"
+                class="input-checkbox"
+              />Lat Pull Down Machine</label>
+
+            <label>
+                <input
+                name="prefer"
+                value="LegCurlMachine"
+                type="checkbox"
+                class="input-checkbox"
+              />Leg Curl Machine</label>
+
+            <label>
+                <input
+                name="prefer"
+                value="PreacherBench"
+                type="checkbox"
+                class="input-checkbox"
+              />Preacher Bench</label>
+          </div>
+
+          <div class="form-group">
+            <p>
+                What would you like to see improved at our gym?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="Equipment">Equipment</option>
+              <option value="groupClasses">Group classes</option>
+              <option value="community">Community</option>
+              <option value="music">Music</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
